@@ -5,7 +5,7 @@ jest.setTimeout(30000); // default puppeteer timeout
 describe('validator form', () => {
   let browser = null;
   let page = null;
-  const baseUrl = 'https://xenianick.github.io/ahj-homework_5.1/';
+  const baseUrl = 'http://localhost:9000';
   beforeAll(async () => {
     browser = await puppetteer.launch({
       // headless: false, // show gui
