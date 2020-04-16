@@ -1,0 +1,72 @@
+body {
+  overflow: hidden;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.btn-wrapper {
+  position: relative;
+}
+.toggle-popover-btn {
+  width: 250px;
+  height: 50px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #dc3545; 
+  cursor: pointer;
+}
+.toggle-popover-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(225,83,97,.5);
+}
+.toggle-popover-btn:hover {
+  background-color: #c82332;
+}
+.popover {
+  display: none;
+  position: absolute;
+  width: 276px;
+  margin-bottom: 12px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: #212529;
+}
+.popover-header {
+  margin: 0;
+  padding: 8px 12px;
+  border-bottom: 1px solid #ebebeb;
+  background-color: #f7f7f7;
+}
+.popover-text {
+  padding: 8px 12px;
+}
+.arrow {
+  position: absolute;
+  left: calc(276px / 2 - 16px / 2);
+  bottom: -8px;
+}
+.arrow::before, .arrow::after {
+  content: ''; 
+  position: absolute;
+  left: 0;
+  border: 8px solid transparent;
+}
+.arrow::before {
+  bottom: -8px;
+  border-top-color: #cccccc;
+}
+.arrow::after {
+  bottom: -7px;
+  border-top-color: #ffffff;
+}
+.active {
+  display: block;
+}
